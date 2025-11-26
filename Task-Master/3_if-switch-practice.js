@@ -52,6 +52,9 @@ let accessMessage = !isActive
 
 console.log(accessMessage);
 
+
+
+
 /*
 ================================================
 PART 2 – GRADE EVALUATOR
@@ -96,6 +99,9 @@ switch (true) {
     console.log("Grade: F");
 }
 
+
+
+
 /*
 ================================================
 PART 3 – SHOPPING DISCOUNT
@@ -124,6 +130,9 @@ if (membership === "gold") {
 }
 
 console.log(`Discount: ${discount}%`);
+
+
+
 
 /*
 ================================================
@@ -170,6 +179,9 @@ if (day === "Saturday") {
   else if (weather === "rainy") console.log("Read Book");
   else if (weather === "snowy") console.log("Build Snowman");
 }
+
+
+
 
 /*
 ================================================
