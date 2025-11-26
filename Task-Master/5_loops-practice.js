@@ -13,7 +13,6 @@
 
 
 
-
 // ================================================================
 // PART 1: Filter Valid Purchases
 // Requirements:
@@ -36,7 +35,6 @@ for (let i = 0; i < dailyPurchases.length; i++) {
   // Add only valid purchase values
   total += dailyPurchases[i];
 }
-
 console.log("Valid Total =", total);
 
 // Result:
@@ -80,9 +78,7 @@ for (let i = 0; i < employees.length; i++) {
     </tr>
   `;
 }
-
 table += "</table>";
-
 document.write(table);
 
 // Result:
@@ -126,7 +122,6 @@ for (let i = 0; i < sizes.length; i++) {
     combos.push(`${sizes[i]} - ${flavors[j]}`);
   }
 }
-
 console.log(combos);
 
 // Result:
@@ -159,10 +154,8 @@ while (i < users.length) {
   if (users[i] && users[i] !== "") {
     clean.push(users[i]);
   }
-
   i++;
 }
-
 console.log(clean);
 
 // Result:
@@ -206,7 +199,6 @@ ${i + 1}- ${employees2[i].name}
 -----------------------
   `);
 }
-
 // Result:
 // Detailed salary calculations for Ali, Sara, and Hassan
 // ================================================================
