@@ -86,7 +86,20 @@ table += "</table>";
 document.write(table);
 
 // Result:
-// Table with two rows: Ahmed + Sara
+// Table with two rows: Ahmed + Sara Like This :
+/* <table>
+    <tbody><tr>
+      <td>Ahmed</td>
+      <td>24</td>
+      <td>IT</td>
+    </tr>
+  
+    <tr>
+      <td>Sara</td>
+      <td>27</td>
+      <td>HR</td>
+    </tr>
+  </tbody></table> */
 // ================================================================
 
 
