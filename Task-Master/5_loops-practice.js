@@ -83,7 +83,7 @@ for (let i = 0; i < employees.length; i++) {
 
 table += "</table>";
 
-console.log(table);
+document.write(table);
 
 // Result:
 // Table with two rows: Ahmed + Sara
