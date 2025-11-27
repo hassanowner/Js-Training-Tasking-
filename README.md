@@ -1,4 +1,4 @@
-![](NewProject95.png)
+![](NewProject97.png)
 # JavaScript Test Tasks – Comprehensive Educational Review
 
 ## Overview 🕸️🕷️
