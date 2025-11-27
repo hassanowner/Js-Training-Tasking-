@@ -1,3 +1,4 @@
+![](1764252644881.jpg)
 # JavaScript Test Tasks – Comprehensive Educational Review
 
 ## Overview 🕸️🕷️
