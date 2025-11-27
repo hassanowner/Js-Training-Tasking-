@@ -1,6 +1,3 @@
-// ===============================
-// JS Test Tasks – Using map (Step by Step)
-// ===============================
 
 /*
 GENERAL IDEA:
@@ -39,14 +36,17 @@ var result = scores.map(function(score) {
   } else {
     return "Pass";
   }
-
 });
-
 // Print the result
 console.log("Task 1 – Scores Pass/Fail:");
 console.log(result);
 // Expected output: ["Pass", "Fail", "Pass", "Fail", "Pass", "Pass"]
 console.log("---------------------------------------------------");
+
+
+
+
+
 
 
 
@@ -113,6 +113,11 @@ Expected output:
 ]
 */
 console.log("---------------------------------------------------");
+
+
+
+
+
 
 
 
