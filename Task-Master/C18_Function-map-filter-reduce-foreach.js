@@ -32,6 +32,13 @@ console.log("All Product Names:", allProductNames);
 // Expected Output: ["KEYBOARD", "MOUSE", "USB CABLE", "CHARGER"]
 
 
+
+
+
+
+
+
+
 // =========================
 // Test Task 2 – Extract Bulk Items (Quantity > 1)
 // Concept: Filter items with quantity greater than 1 and collect their names
@@ -57,6 +64,12 @@ orders2.forEach(function(order) {
 
 console.log("Bulk Items:", bulkItems);
 // Expected Output: ["Mouse", "USB Cable"]
+
+
+
+
+
+
 
 
 // =========================
