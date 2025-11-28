@@ -36,6 +36,9 @@ console.log(10 % 2);          // Modulus → remainder zero
 console.log(11 % 2);          // Modulus → remainder = 1
 
 
+
+
+
 /* ============================================================
    Test Task 2 – Unary Plus & Unary Negation
    Explanation:
@@ -69,6 +72,9 @@ console.log(-true);      // -1
 console.log(Number("100")); // Same as +"100"
 
 
+
+
+
 /* ============================================================
    Test Task 3 – Type Coercion (Type Casting)
    Explanation:
@@ -83,6 +89,10 @@ let c = true;   // true → 1 in numeric operations
 
 // +a → convert string to number
 console.log(+a + b + c); // 100 + 20 + 1 = 121
+
+
+
+
 
 
 /* ============================================================
@@ -106,6 +116,9 @@ x /= 50;    // x = x / 50
 console.log("Final Value of x:", x);
 
 
+
+
+
 /* ============================================================
    Extra Test Task (Your Practice)
    Create variables:
@@ -124,3 +137,4 @@ let num3 = false;
 let result = +num1 + (num2 - num3) + +num3;
 
 console.log("Result = ", result);
+
