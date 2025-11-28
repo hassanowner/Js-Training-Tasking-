@@ -1,75 +1,179 @@
-// ===============================
-// JS Test Tasks – Variables, Strings & Operators
-// Topics: Data Types & typeof, Variables, Identifiers, Var/Let/Const, 
-// Strings & Escape Sequences, Concatenation, Template Literals, 
-// Arithmetic, Unary Operators, Type Coercion, Assignment
-// This block contains tasks for learning purposes
-// ===============================
+/* ============================================================
+   JavaScript Fundamentals – Combined Test Tasks
+   This file contains all tests merged together in one place.
+   Topics included:
+   1. Data Types & typeof
+   2. Variables Introduction
+   3. Identifiers Naming Rules
+   4. Var / Let / Const Differences
+   5. String Syntax & Escape Sequences
+   6. Concatenation
+   7. Template Literals
+============================================================ */
 
-/********************************************
- *  PART 1: Variables & Data Types
- *  Objective: Define variables of different data types
- *  and check their type using the `typeof` operator
- ********************************************/
+/* ============================================================
+   Test Task 1 – Data Types + typeof
+   Explanation:
+   This task helps you understand the main JavaScript data types
+   and how to use typeof to check the value type.
+============================================================ */
 
-let productName = "Laptop";   // String → a text value
-let price = 500;              // Number → numeric value
-let quantity = 2;             // Number → numeric value
-let isDiscount = true;        // Boolean → true or false value
-let discountValue = "10";     // String → number represented as text
-let buyer = {                 // Object → complex structure to store data
-  name: "Ali",
-  country: "Iraq"
-};
-// Print the type of each variable
-console.log(typeof productName);   // "string" → shows that productName is a text
-console.log(typeof price);         // "number" → price is numeric
-console.log(typeof quantity);      // "number" → quantity is numeric
-console.log(typeof isDiscount);    // "boolean" → true/false
-console.log(typeof discountValue); // "string" → even though it looks like a number, it's text
-console.log(typeof buyer);         // "object" → complex object
+console.log("Osama Mohamed");
+console.log(typeof "Osama Mohamed");
+console.log(typeof 5000);
+console.log(typeof 5000.99);
+console.log(typeof [10, 15, 17]);       // Arrays are objects
+console.log(typeof { name: "Osama" });  // Object
+console.log(typeof true);               // Boolean
+console.log(typeof false);              // Boolean
+console.log(typeof undefined);          // Undefined
+console.log(typeof null);               // Object (JavaScript bug)
 
+// Your own values
+let myString = "Learning JS";
+let myNumber = 2025;
+let myObject = { skill: "JavaScript", level: "Beginner" };
 
-
-
-/********************************************
- *  PART 2: Concatenation
- *  Objective: Combine strings and variables using +
- ********************************************/
-let userName = "Hassan";        // String → user name
-let age = 25;                   // Number → user age
-
-// Concatenate strings and numbers using the + operator
-let message1 =
-  "Hello " + userName + ", you are " + age + " years old.";
-console.log(message1);
-// Result → "Hello Hassan, you are 25 years old."
-// Explanation: + operator combines strings; numbers are converted to string if needed
+console.log(myString, typeof myString);
+console.log(myNumber, typeof myNumber);
+console.log(myObject, typeof myObject);
 
 
 
 
-/********************************************
- *  PART 3: Template Literals
- *  Objective: Use template literals for easier string interpolation
- ********************************************/
-let message2 = `Hello ${userName}, you are ${age} years old.`;
-console.log(message2);
-// Result → "Hello Hassan, you are 25 years old."
-// Explanation: `${}` allows us to insert variables directly into strings
-// Using backticks ` instead of quotes makes it easier than + concatenation
+
+/* ============================================================
+   Test Task 2 – Variables Introduction
+   Explanation:
+   Learn how to create variables, store values, and print them.
+============================================================ */
+
+var user = "Sayed";
+console.log(user);
+
+let userName = "Hassan";
+let userAge = 20;
+let userCountry = "Iraq";
+
+console.log(`User: ${userName}, Age: ${userAge}, Country: ${userCountry}`);
 
 
 
 
-/********************************************
- *  PART 4: Unary + Operator & Type Coercion
- *  Objective: Convert strings or booleans to numbers, 
- *  and demonstrate automatic type conversion
- ********************************************/
 
-console.log(+ "100");   // 100 → Unary + converts string to number
-console.log(+ true);    // 1 → true converts to 1
-console.log("5" + 5);   // "55" → number 5 is coerced to string, concatenation happens
-console.log(+"5" - 2);   // 3 → string "5" is converted to number because of - operator
-console.log(10 + "");   // "10" → number 10 is converted to string when combined with ""
+/* ============================================================
+   Test Task 3 – Identifiers Rules
+   Explanation:
+   Practice writing valid variable names and avoiding reserved words.
+============================================================ */
+
+var correctName = "Sayed";
+console.log(correctName);
+
+// Valid identifiers
+let fullName = "Ali";
+let total_score = 150;
+let $price = 99;
+let _value = "Hello";
+let user2Data = "Test";
+
+// Invalid identifier (reserved word)
+// let var = 5; // ERROR
+
+
+
+
+
+/* ============================================================
+   Test Task 4 – Var / Let / Const
+   Explanation:
+   Demonstrates how each keyword behaves with redeclaration,
+   reassignment, and general rules.
+============================================================ */
+
+// var → Can be redeclared
+var x = 10;
+var x = 20; // Works
+console.log(x);
+
+// let → Cannot be redeclared
+let y = 15;
+// let y = 30; // ERROR
+
+// const → Value cannot change
+const PI = 3.14;
+// PI = 5; // ERROR
+
+
+
+
+
+/* ============================================================
+   Test Task 5 – String Escape Sequences
+   Explanation:
+   Shows how to use escape characters like \" \' \\ \n
+============================================================ */
+
+// Original examples
+console.log("Elzero Web \"School\"");
+console.log('Elzero Web \'School\'');
+console.log('Elzero \\ Web');
+console.log("Elzero\nWeb\nSchool");
+
+// Your task example
+console.log("Hello \"JS\" \\ Welcome\nTo Learning JavaScript!");
+
+
+
+
+
+/* ============================================================
+   Test Task 6 – String Concatenation
+   Explanation:
+   Practice joining strings using + operator.
+============================================================ */
+
+let a = "We Love";
+let b = "JavaScript";
+console.log(a + " " + b);
+
+// Your task
+let part1 = "Learning";
+let part2 = "JavaScript";
+console.log(part1 + " " + part2 + " Is Fun!");
+
+
+
+
+
+/* ============================================================
+   Test Task 7 – Template Literals
+   Explanation:
+   Using backticks (`) to embed variables and create formatted text.
+============================================================ */
+
+let title = "Elzero";
+let desc = "Elzero Web School";
+
+let markup = `
+  <div class="card">
+    <h2>${title}</h2>
+    <p>${desc}</p>
+  </div>
+`;
+
+document.write(markup);
+
+// Your task (product card)
+let product = "Laptop";
+let price = 750;
+
+let productCard = `
+  <div class="item">
+    <h3>${product}</h3>
+    <p>Price: $${price}</p>
+  </div>
+`;
+
+document.write(productCard);
+
