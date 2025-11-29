@@ -52,7 +52,7 @@ The purpose of this repository is purely **educational**:
 
 ---
 
-### 4. Arrays
+### 4. Arrays ( P1 & P2 )
 - **Array Big Introduction** – Basics and usage of arrays.  
 - **Using Length With Array** – Checking array size.  
 - **Add and Remove From Array** – `push`, `pop`, `shift`, `unshift`.  
@@ -63,7 +63,7 @@ The purpose of this repository is purely **educational**:
 
 ---
 
-### 5. Loops
+### 5. Loops ( P1 & P2 )
 - **Loop For and the Concept of Loop** – Basic for-loop.  
 - **Looping on Sequences** – Iterating over arrays and ranges.  
 - **Nested Loops and Trainings** – Loops inside loops for complex tasks.  
