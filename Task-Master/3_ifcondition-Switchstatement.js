@@ -1,9 +1,9 @@
 /*
   ===========================================================
-  JAVASCRIPT TEST TASK – OPERATORS & CONTROL FLOW
+  JAVASCRIPT TEST TASK – OPERATORS, CONTROL FLOW & SWITCH
   ===========================================================
 
-  This comprehensive test task covers the following topics:
+  This comprehensive test task covers the following topics in order:
 
   1) Comparison Operators
      - == Equal (checks value only)
@@ -29,6 +29,12 @@
   5) Logical OR || and Nullish Coalescing ??
      - || returns first truthy value (considers falsy: 0, "", null, undefined, false)
      - ?? returns first defined value (only checks null or undefined)
+
+  6) Switch Statement
+     - switch(expression) with case and default
+     - Default ordering matters
+     - Multiple cases can match the same block
+     - Comparison uses === (strict equality)
 
   ===========================================================
 */
@@ -58,6 +64,11 @@ console.log(10 <= 10);  // true
 
 console.log(typeof "Osama" === typeof "Ahmed"); // true → both are strings
 
+// Result:
+// true, true, false, false, true, false
+// false, false, true, true, false, true
+// true
+
 
 
 
@@ -70,6 +81,9 @@ console.log(!true);                      // false → negates true
 console.log(!(10 == "10"));              // false → 10 == "10" is true, !true = false
 console.log(10 == "10" && 10 > 8 && 10 > 50); // false → last condition is false
 console.log(10 == "10" || 10 > 80 || 10 > 50); // true → first condition is true
+
+// Result:
+// false, false, false, true
 
 
 
@@ -117,6 +131,9 @@ if (discount === true) {
 
 console.log(price); // 40 → nested if applied
 
+// Result:
+// 70
+// 40
 
 
 
@@ -152,6 +169,13 @@ theAge < 20
   ? console.log("Larger Than 60")
   : console.log("Unknown");
 
+// Result:
+// Mrs
+// Mrs
+// Mrs
+// Hello Mrs Mona
+// 20 To 60
+
 
 
 
@@ -176,31 +200,36 @@ console.log(`The Price Is ${price || 200}`);  // 200 → 0 is falsy
 // Nullish Coalescing → returns first non-null/undefined
 console.log(`The Price Is ${price ?? 200}`);  // 0 → 0 is defined, not null/undefined
 
-/*
-  ================================
-  Expected Output Summary:
+// Result:
+// true, true, false, false, false
+// The Price Is 200
+// The Price Is 0
 
-  TASK 1: Comparison Operators
-  true, true, false, false, true, false
-  false, false, true, true, false, true
-  true
 
-  TASK 2: Logical Operators
-  false, false, false, true
 
-  TASK 3: Control Flow
-  70
-  40
 
-  TASK 4: Conditional (Ternary) Operator
-  Mrs
-  Mrs
-  Mrs
-  Hello Mrs Mona
-  20 To 60
+/* ================================
+   TASK 6: Switch Statement
+   ================================ */
+console.log("\n6) Switch Statement Tests");
 
-  TASK 5: Logical OR || and Nullish Coalescing ??
-  true, true, false, false, false
-  The Price Is 200
-  The Price Is 0
-*/
+let day = "A"; // This is not a number
+
+switch (day) {
+  default:
+    console.log("Unknown Day"); // default executes because no case matches
+    break;
+  case 0:
+    console.log("Saturday");
+    break;
+  case 1:
+    console.log("Sunday");
+    break;
+  case 2:
+  case 3:
+    console.log("Monday"); // multiple match example
+    break;
+}
+
+// Result:
+// Unknown Day → default executed
