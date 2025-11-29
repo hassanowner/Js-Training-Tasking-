@@ -58,6 +58,9 @@ console.log(10 <= 10);  // true
 
 console.log(typeof "Osama" === typeof "Ahmed"); // true → both are strings
 
+
+
+
 /* ================================
    TASK 2: Logical Operators
    ================================ */
@@ -67,6 +70,9 @@ console.log(!true);                      // false → negates true
 console.log(!(10 == "10"));              // false → 10 == "10" is true, !true = false
 console.log(10 == "10" && 10 > 8 && 10 > 50); // false → last condition is false
 console.log(10 == "10" || 10 > 80 || 10 > 50); // true → first condition is true
+
+
+
 
 /* ================================
    TASK 3: Control Flow
@@ -111,6 +117,10 @@ if (discount === true) {
 
 console.log(price); // 40 → nested if applied
 
+
+
+
+
 /* ================================
    TASK 4: Conditional (Ternary) Operator
    ================================ */
@@ -141,6 +151,10 @@ theAge < 20
   : theAge > 60
   ? console.log("Larger Than 60")
   : console.log("Unknown");
+
+
+
+
 
 /* ================================
    TASK 5: Logical OR || and Nullish Coalescing ??
