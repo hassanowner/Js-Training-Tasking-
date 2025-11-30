@@ -1,176 +1,199 @@
-/* ============================================================
-   DOM MASTER PANEL – Full Structured Tasks (6 Sections)
-   Topics Covered:
-   1. DOM Selectors
-   2. Get/Set Content & Attributes
-   3. Check Attributes
-   4. Create Elements (Basic)
-   5. Create Product (Advanced Practice)
-   6. Deal With Children (children / childNodes)
-   ============================================================ */
+<!-- ============================================================
+         DOM MASTER PANEL – Full Structured Tasks
+         
+         This file demonstrates key DOM concepts in JavaScript.
+         Each section includes a reference HTML snippet followed
+         by the corresponding JavaScript code to manipulate it.
 
+         Topics Covered (in order):
 
+         1. DOM Selectors
+            - Selecting elements by ID, Tag Name, Class Name
+            - Using querySelector and querySelectorAll
+            - Accessing specific elements from collections
 
-/* ============================================================
-   1) TEST TASK – DOM Selectors
-   Goal:
-   - Select elements using ID, Tag, Class, querySelector, querySelectorAll
-   - Log specific elements from each collection
-   ============================================================ */
+         2. Get / Set Content & Attributes
+            - Reading and modifying innerHTML and textContent
+            - Changing element attributes directly
+            - Using getAttribute and setAttribute methods
 
-let box = document.getElementById("box");
-let items = document.getElementsByTagName("li");
-let notes = document.getElementsByClassName("note");
-let firstNote = document.querySelector(".note");
-let allNotes = document.querySelectorAll(".note");
+         3. Check Attributes
+            - Checking if an attribute exists using hasAttribute
+            - Updating or removing attributes
+            - Checking if an element has any attributes using hasAttributes
 
-console.log(box);              // Element by ID
-console.log(items[1]);         // Second <li>
-console.log(notes[0]);         // First element with class "note"
-console.log(firstNote);        // First matched .note
-console.log(allNotes[2]);      // Third matched .note
+         4. Create Elements (Basic)
+            - Creating new elements with createElement
+            - Adding attributes and comments
+            - Appending text and elements to the DOM
 
+         5. Create Product (Heading + Paragraph)
+            - Building a structured product box dynamically
+            - Adding a heading and paragraph inside a div
 
+         6. Deal With Children
+            - Accessing children and childNodes
+            - Using firstChild, lastChild
+            - Using firstElementChild, lastElementChild
+       ============================================================ -->
 
+    <!-- 1) DOM SELECTORS HTML -->
+    <ul id="box">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
 
-/* ============================================================
-   2) TEST TASK – Get / Set Content & Attributes
-   Goal:
-   - Read innerHTML & textContent
-   - Change content
-   - Modify attributes directly
-   - Use getAttribute / setAttribute
-   ============================================================ */
+    <span class="note">Note 1</span>
+    <span class="note">Note 2</span>
+    <span class="note">Note 3</span>
 
-let msg = document.querySelector(".msg");
+    <script>
+      let box = document.getElementById("box");
+      let items = document.getElementsByTagName("li");
+      let notes = document.getElementsByClassName("note");
+      let firstNote = document.querySelector(".note");
+      let allNotes = document.querySelectorAll(".note");
 
-console.log(msg.innerHTML);       // Show HTML content
-console.log(msg.textContent);     // Show text only
-
-msg.innerHTML = "Updated <b>Message</b> from JS";
-msg.textContent = "Updated <b>Message</b> from JS (textContent)";
-
-// Modify image attributes
-document.images[0].src = "https://example.com/image.png";
-document.images[0].alt = "Example";
-document.images[0].title = "Image Title";
-document.images[0].className = "image-box";
-
-// Attribute Methods
-let link = document.querySelector(".myLink");
-console.log(link.getAttribute("href"));
-link.setAttribute("href", "https://google.com");
-link.setAttribute("title", "Google Website");
-
-
-
-
-/* ============================================================
-   3) TEST TASK – Check Attributes
-   Goal:
-   - Check existence of attribute using hasAttribute()
-   - Remove or update attribute
-   - Check if element has ANY attributes using hasAttributes()
-   ============================================================ */
-
-let paragraph = document.querySelector(".info");
-
-if (paragraph.hasAttribute("data-type")) {
-  if (paragraph.getAttribute("data-type") === "") {
-    paragraph.removeAttribute("data-type"); // remove empty attribute
-  } else {
-    paragraph.setAttribute("data-type", "Updated Value");
-  }
-} else {
-  console.log("Attribute Not Found");
-}
-
-// Does element have ANY attributes?
-if (paragraph.hasAttributes()) {
-  console.log("Paragraph has attributes");
-} else {
-  console.log("Paragraph has NO attributes");
-}
-
-
-
-
-/* ============================================================
-   4) TEST TASK – Create Elements (Basic)
-   Goal:
-   - Create <div>
-   - Add attribute
-   - Add text + comment
-   - Append everything to DOM
-   ============================================================ */
-
-let card = document.createElement("div");
-let cardAttr = document.createAttribute("data-box");
-let cardText = document.createTextNode("This is a card created by JavaScript");
-let comment = document.createComment("This is a JS-generated card");
-
-card.className = "card";
-card.setAttributeNode(cardAttr);
-card.setAttribute("data-test", "123");
-
-card.appendChild(comment);
-card.appendChild(cardText);
-
-document.body.appendChild(card);
+      console.log(box);
+      console.log(items[1]);
+      console.log(notes[0]);
+      console.log(firstNote);
+      console.log(allNotes[2]);
+    </script>
 
 
 
 
 
-/* ============================================================
-   5) TEST TASK – Create Product (Heading + Paragraph)
-   Goal:
-   - Build a complete product box:
-     <div class="product">
-        <h2>Product Title</h2>
-        <p>Description</p>
-     </div>
-   ============================================================ */
+    <!-- 2) Get / Set Content & Attributes HTML -->
+    <div class="msg">Original Message</div>
+    <img src="https://via.placeholder.com/100" alt="Placeholder" />
+    <a href="https://www.google.com/" class="myLink">Google Official</a>
 
-let product = document.createElement("div");
-let title = document.createElement("h2");
-let desc = document.createElement("p");
+    <script>
+      let msg = document.querySelector(".msg");
 
-let titleText = document.createTextNode("Phone X Ultra");
-let descText = document.createTextNode("A powerful smartphone with excellent performance.");
+      console.log(msg.innerHTML);
+      console.log(msg.textContent);
 
-title.appendChild(titleText);
-desc.appendChild(descText);
+      msg.innerHTML = "Updated <b>Message</b> from JS";
+      msg.textContent = "Updated <b>Message</b> from JS (textContent)";
 
-product.className = "product";
-product.appendChild(title);
-product.appendChild(desc);
+      document.images[0].src = "https://via.placeholder.com/100";
+      document.images[0].alt = "Google Image";
+      document.images[0].title = "Google Logo";
+      document.images[0].className = "image-box";
 
-document.body.appendChild(product);
-
+      let link = document.querySelector(".myLink");
+      console.log(link.getAttribute("href"));
+      link.setAttribute("href", "https://www.google.com/");
+      link.setAttribute("title", "Google Official Website");
+    </script>
 
 
 
 
-/* ============================================================
-   6) TEST TASK – Deal With Children
-   Goal:
-   - Use children, childNodes
-   - Get first/last child
-   - Get firstElementChild / lastElementChild
-   ============================================================ */
 
-let container = document.querySelector(".container");
+    <!-- 3) Check Attributes HTML -->
+    <p class="info" data-type="oldValue">Some Info Paragraph</p>
 
-console.log(container.children);             // HTMLCollection (elements only)
-console.log(container.children[0]);          // First element child
+    <script>
+      let paragraph = document.querySelector(".info");
 
-console.log(container.childNodes);           // NodeList (text, comments, elements)
-console.log(container.childNodes[1]);        // Could be text/comment/element
+      if (paragraph.hasAttribute("data-type")) {
+        if (paragraph.getAttribute("data-type") === "") {
+          paragraph.removeAttribute("data-type");
+        } else {
+          paragraph.setAttribute("data-type", "Updated Value");
+        }
+      } else {
+        console.log("Attribute Not Found");
+      }
 
-console.log(container.firstChild);           // First node (text or comment)
-console.log(container.lastChild);            // Last node
+      if (paragraph.hasAttributes()) {
+        console.log("Paragraph has attributes");
+      } else {
+        console.log("Paragraph has NO attributes");
+      }
+    </script>
 
-console.log(container.firstElementChild);    // First element child
-console.log(container.lastElementChild);     // Last element child
+
+
+
+
+
+    <!-- 4) Create Elements (Basic) HTML -->
+    <!-- No initial HTML needed for creation -->
+
+    <script>
+      let card = document.createElement("div");
+      let cardAttr = document.createAttribute("data-box");
+      let cardText = document.createTextNode("This is a Google card created by JavaScript");
+      let comment = document.createComment("This is a JS-generated Google card");
+
+      card.className = "card";
+      card.setAttributeNode(cardAttr);
+      card.setAttribute("data-test", "123");
+
+      card.appendChild(comment);
+      card.appendChild(cardText);
+
+      document.body.appendChild(card);
+    </script>
+
+
+
+
+
+
+    <!-- 5) Create Product (Heading + Paragraph) HTML -->
+    <!-- No initial HTML needed for creation -->
+
+    <script>
+      let product = document.createElement("div");
+      let title = document.createElement("h2");
+      let desc = document.createElement("p");
+
+      let titleText = document.createTextNode("Google Pixel 9");
+      let descText = document.createTextNode("A high-end Google smartphone with advanced features.");
+
+      title.appendChild(titleText);
+      desc.appendChild(descText);
+
+      product.className = "product";
+      product.appendChild(title);
+      product.appendChild(desc);
+
+      document.body.appendChild(product);
+    </script>
+
+
+
+
+
+
+    <!-- 6) Deal With Children HTML -->
+    <div class="container">
+      Text Node
+      <p>Child Paragraph 1</p>
+      <span>Child Span 1</span>
+      Comment
+    </div>
+
+    <script>
+      let container = document.querySelector(".container");
+
+      console.log(container.children);
+      console.log(container.children[0]);
+
+      console.log(container.childNodes);
+      console.log(container.childNodes[1]);
+
+      console.log(container.firstChild);
+      console.log(container.lastChild);
+
+      console.log(container.firstElementChild);
+      console.log(container.lastElementChild);
+    </script>
 
