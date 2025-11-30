@@ -119,3 +119,100 @@ statusDiv.onclick = function() {
 };
 
 
+
+
+
+
+
+
+/*
+  Test Task 3:
+  Topics Covered:
+  - DOM Events (onclick, onmouseleave)
+  - Form Validation & Prevent Default
+  - Event Simulation
+  - ClassList (toggle)
+*/
+  <!-- HTML Reference -->
+<button id="btn">Click or Hover Me</button>
+
+<form id="simpleForm">
+  <input type="text" name="username" placeholder="Username" />
+  <button type="submit">Submit</button>
+</form>
+
+<div id="status" class="hidden">Status Message</div>
+
+
+// Elements
+let btn = document.getElementById("btn");
+let form = document.getElementById("simpleForm");
+let input = form.username;
+let status = document.getElementById("status");
+
+// Event: Mouse leaves button
+btn.onmouseleave = () => console.log("Mouse left button");
+
+// Form validation
+form.onsubmit = (e) => {
+  if (input.value === "") {
+    e.preventDefault();
+    status.textContent = "Please enter a username!";
+    status.classList.remove("hidden");
+    status.classList.add("error");
+  }
+};
+
+// Event simulation: blur triggers click on button
+input.onblur = () => btn.click();
+
+// ClassList toggle on status click
+status.onclick = () => status.classList.toggle("hidden");
+
+
+
+
+
+
+/*
+  Test Task 4:
+  Topics Covered:
+  - DOM Events (onclick, onblur)
+  - Event Simulation
+  - ClassList (add, toggle)
+*/
+
+<!-- HTML Reference -->
+<input type="text" id="itemInput" placeholder="Enter item" />
+<button id="addBtn">Add</button>
+<ul id="itemList"></ul>
+
+
+// Elements
+let input = document.getElementById("itemInput");
+let addBtn = document.getElementById("addBtn");
+let list = document.getElementById("itemList");
+
+// Add item to list
+addBtn.onclick = () => {
+  if (input.value === "") return;
+  let li = document.createElement("li");
+  li.textContent = input.value;
+  li.classList.add("item");
+  list.appendChild(li);
+  input.value = "";
+};
+
+// Simulate click when input loses focus
+input.onblur = () => addBtn.click();
+
+// Toggle highlight class on list click
+list.onclick = () => list.classList.toggle("highlight");
+
+
+
+
+
+
+
+
