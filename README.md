@@ -9,7 +9,7 @@ The purpose of this repository is purely **educational**:
 - To act as a **quick reference guide** for JavaScript fundamentals.  
 - To provide **hands-on practice** with real examples.  
 
-> ⚠️ This is not a production project. It's intended as a **learning and practice resource**.
+> !! This is not a production project. It's intended as a **learning and practice resource**.!!
 
 ---
 
@@ -160,7 +160,7 @@ The purpose of this repository is purely **educational**:
   Adding event listeners and handling events on original and cloned nodes.
 
 ---
-## How to Use
+## How to Use 📝
 1. Open each JavaScript file in your preferred editor.  
 2. Read the comments and instructions for each task.  
 3. Run the code in **browser console** or **Node.js** to see outputs.  
@@ -168,7 +168,7 @@ The purpose of this repository is purely **educational**:
 
 ---
 
-## Purpose
+## Purpose 📚
 This repository is a **learning and revision toolkit**. It is designed for:  
 - Quick **revision** of JavaScript concepts.  
 - Practicing **coding exercises**.  
