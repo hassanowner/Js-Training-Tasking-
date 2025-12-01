@@ -1,4 +1,4 @@
-![banner-review](1764559119481.jpg)
+![banner-review](banner-main.png.png)
 # JavaScript Test Tasks – Comprehensive Educational Review
 
 ## Overview 🕸️🕷️
