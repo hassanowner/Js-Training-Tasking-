@@ -113,78 +113,53 @@ The purpose of this repository is purely **educational**:
 - Objects + Functions Mix: Using functions to process and update object data.
 
 ---
-
-
 ### 22. BOM – Browser Object Model  
-**1. DOM Selectors**
-- Selecting elements by ID, Tag Name, Class Name
-- Using querySelector and querySelectorAll
-- Accessing elements from collections
+- **DOM Selectors**  
+  Selecting elements using IDs, classes, tags, and query selectors.
 
-**2. Get / Set Content & Attributes**
-- Reading and modifying innerHTML and textContent
-- Changing attributes directly
-- Using getAttribute and setAttribute
+- **Get / Set Content & Attributes**  
+  Reading and modifying element content and attributes.
 
-**3. Check Attributes**
-- hasAttribute() to check existing attributes
-- Removing or updating attributes
-- hasAttributes() to check for any attributes
+- **Check Attributes**  
+  Checking, updating, and removing element attributes.
 
-**4. Create Elements (Basic)**
-- createElement for generating new nodes
-- Adding attributes and comments
-- Appending text and elements
+- **Create Elements (Basic)**  
+  Creating new elements and injecting them into the DOM.
 
-**5. Create Product (Heading + Paragraph)**
-- Building a structured product box
-- Inserting heading + paragraph inside a container
+- **Create Product (Heading + Paragraph)**  
+  Dynamically creating a structured container with a title and description.
 
-**6. Deal With Children**
-- Accessing children vs childNodes
-- firstChild / lastChild
-- firstElementChild / lastElementChild
+- **Deal With Children**  
+  Accessing children, nodes, and first/last element relationships.
 
-**7. DOM Events**
-- Inline HTML events vs JS-based events
-- onclick, onmouseenter, onmouseleave, oncontextmenu
-- Window events: onload, onscroll, onresize
-- Input events: onfocus, onblur, onsubmit
+- **DOM Events**  
+  Handling user, window, and input events via JS or HTML.
 
-**8. Form Validation & Prevent Default**
-- Basic input validation
-- preventDefault() to block submission
-- Preventing default link behavior
+- **Form Validation & Prevent Default**  
+  Validating inputs and preventing default form or link actions.
 
-**9. Event Simulation***
-- Simulating: click(), focus(), blur()
+- **Event Simulation**  
+  Triggering events programmatically like click, focus, blur.
 
-**10. DOM ClassList**
-- Accessing classList
-- Methods: length, contains, item, add, remove, toggle
+- **DOM ClassList**  
+  Managing CSS classes using add, remove, toggle, and other methods.
 
-**11. DOM CSS Manipulation**
-- Changing styles dynamically
-- Using style, cssText
-- removeProperty / setProperty
+- **DOM CSS Manipulation**  
+  Changing inline styles and CSS properties with JavaScript.
 
-**12. Deal With Elements**
-- append, prepend, before, after
-- Removing elements dynamically
+- **Deal With Elements**  
+  Inserting, removing, and positioning elements in the DOM.
 
-**13. DOM Traversing**
-- Accessing parent, next, previous siblings
-- Navigating children
+- **DOM Traversing**  
+  Navigating parents, siblings, and child elements.
 
-**14. DOM Cloning**
-- cloneNode with deep cloning
+- **DOM Cloning**  
+  Cloning elements with or without child nodes.
 
-**15. Add Event Listener + Cloned Element Handling**
-- addEventListener usage
-- Handling multiple event types
-- Detecting & handling cloned elements
+- **Add Event Listener + Cloned Element Handling**  
+  Adding event listeners and handling events on original and cloned nodes.
+
 ---
-
 ## How to Use
 1. Open each JavaScript file in your preferred editor.  
 2. Read the comments and instructions for each task.  
