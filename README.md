@@ -160,32 +160,27 @@ The purpose of this repository is purely **educational**:
   Adding event listeners and handling events on original and cloned nodes.
 
 ---
-### BOM – Browser Object Model (P1, P2, P3, P4)
-- **Window Object + Dialogs + Timers**
-  Window Object (global features, size, URL, properties)
-  alert / confirm / prompt (user messages & inputs)
-  setTimeout + clearTimeout (delayed actions)
+### 23. BOM – Browser Object Model (P1, P2, P3, P4)
+
+- **Window Object + Dialogs + Timers**  
+  Window Object (global features, size, URL, properties)  
+  alert / confirm / prompt (user messages & inputs)  
+  setTimeout + clearTimeout (delayed actions)  
   setInterval + clearInterval (repeated actions)
 
-- **Location, Window Control, Popups, History**
-  Location Object (read URL, change URL, reload)
-  Window Open / Close (popups, custom size)
-  History API (back, forward navigation)
-  Window Controls (stop, print, focus, scrollTo, scrollBy)
+- **Location, Window Control, Popups, History**  
+  Location Object (read URL, change URL, reload)  
+  Window Open / Close (popups, custom size)  
+  History API (back, forward navigation)  
+  Window Controls (stop, print, focus, scrollTo, scrollBy)  
   Scroll API + Scroll-To-Top Button (smooth scrolling, UI tools)
 
-- **Local Storage + Practice**
-  Local Storage Basics (setItem, getItem, removeItem, clear, key)
+- **Local Storage + Practice**  
+  Local Storage Basics (setItem, getItem, removeItem, clear, key)  
   Local Storage Practice (theme save, persistent UI)
 
-- **Session Storage (Per Tab Storage)**
+- **Session Storage (Per Tab Storage)**  
   Session Storage (temporary tab data, auto-restore, auto-clear)
-## How to Use 🚧
-1. Open each JavaScript file in your preferred editor.  
-2. Read the comments and instructions for each task.  
-3. Run the code in **browser console** or **Node.js** to see outputs.  
-4. Modify and experiment with the code to understand the concepts better.  
-
 ---
 
 ## Purpose 📚
