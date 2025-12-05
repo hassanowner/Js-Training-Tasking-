@@ -112,41 +112,41 @@
 - Comparison uses === (strict equality)
 
 ---
-========================================
-📌 Arrays
-========================================
-• Creating Arrays  
-• new Array() vs []  
-• Accessing Elements  
-• Nested Arrays  
-• Updating Elements  
-• Array.isArray  
+# 🏷️Arrays
 
-• Array Length  
-• Modifying length  
+### Creating Arrays
+- Creating arrays using `new Array()` and `[]`  
+- Accessing elements by index  
+- Working with nested arrays  
+- Updating/changing array elements  
+- Checking if a value is an array using `Array.isArray()`  
 
-• Adding & Removing Elements  
-  - unshift  
-  - push  
-  - shift  
-  - pop  
+### Array Length
+- Getting the length of an array  
+- Modifying the length property to truncate or expand the array  
 
-• Searching  
-  - indexOf  
-  - lastIndexOf  
-  - includes  
+### Adding and Removing Elements
+- `unshift()` → Add item to the start  
+- `push()` → Add item to the end  
+- `shift()` → Remove the first element  
+- `pop()` → Remove the last element  
 
-• Sorting  
-  - sort  
-  - reverse  
+### Searching in Arrays
+- `indexOf(value, fromIndex)`  
+- `lastIndexOf(value, fromIndex)`  
+- `includes(value, fromIndex)`  
 
-• Slicing & Splicing  
-  - slice  
-  - splice  
+### Sorting Arrays
+- `sort()` for sorting elements  
+- `reverse()` for reversing array order  
 
-• Joining Arrays  
-  - concat  
-  - join  
+### Slicing and Splicing
+- `slice(start, end)` for copying a portion without changing the original  
+- `splice(start, deleteCount, items…)` for removing/replacing/adding elements in the original array  
+
+### Joining Arrays
+- `concat()` for merging arrays  
+- `join(separator)` for converting array elements into a string
 
 
 ========================================
