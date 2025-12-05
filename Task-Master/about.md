@@ -1,16 +1,38 @@
-## 🏷️JavaScript Fundamentals
-• Data Types & typeof  
-• Variables Introduction  
-• Identifiers Naming Rules  
-• Var / Let / Const Differences  
-• String Syntax & Escape Sequences  
-• Concatenation  
-• Template Literals  
-• Arithmetic Operators  
-• Unary Operators (+ / -)  
-• Type Coercion (Implicit Casting)  
-• Assignment Operators  
+# 🏷️JavaScript Fundamentals 
 
+### Data Types & typeof
+- Primitive types: string, number, boolean, undefined, null, symbol, bigint  
+- typeof operator for detecting data type  
+- Special cases like typeof null and typeof arrays  
+
+### Variables Introduction
+- Declaring variables  
+- Variable naming basics  
+- Storing and updating values  
+
+### Identifiers Naming Rules
+- Valid vs invalid variable names  
+- Rules: no starting with numbers, no spaces, no special characters except _ and $  
+- Case sensitivity  
+
+### Var / Let / Const Differences
+- var: function-scoped, hoisting behavior  
+- let: block-scoped, no redeclaration  
+- const: block-scoped, must be assigned at declaration, immutable binding (not immutable value)  
+
+### String Syntax & Escape Sequences
+- Using single, double, and backtick quotes  
+- Escape sequences: \n, \t, \", \'  
+- Multiline strings with template literals  
+
+### Concatenation
+- Combining strings using +  
+- Implicit type coercion when mixing string + number  
+
+### Template Literals
+- Using backticks ``  
+- Embedding variables with ${}  
+- Multiline strings and expressions inside templates
 ---
 
 # 🏷️Numbers & Math
