@@ -311,3 +311,37 @@
 - Building full pipelines to transform, clean, calculate, and iterate  
 - Shows how array methods work in harmony  
 - Practical tasks demonstrating real project patterns
+
+---
+# 🏷️Object 
+### Object Basics & Accessing Properties
+- Creating basic objects  
+- Reading and updating properties  
+- Understanding property types and values  
+
+### Dot Notation vs Bracket Notation & Dynamic Keys
+- Accessing properties using dot notation  
+- Accessing properties using bracket notation  
+- Using variables to create dynamic property keys  
+
+### Nested Objects & Methods
+- Storing objects inside other objects  
+- Accessing deeply nested values  
+- Adding and calling methods inside objects  
+
+### Creating Objects Using `new Object()`
+- Building empty objects with the constructor  
+- Adding properties after creation  
+
+### The `this` Keyword (Object Context & Global Context)
+- Using `this` inside methods to refer to the object  
+- Understanding how `this` behaves in the global scope  
+
+### Object.create()
+- Creating new objects with a specific prototype  
+- Inheriting properties and methods from another object  
+
+### Object.assign()
+- Cloning objects  
+- Merging multiple objects  
+- Adding or overriding properties during assignment
