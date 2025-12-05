@@ -148,18 +148,37 @@
 - `concat()` for merging arrays  
 - `join(separator)` for converting array elements into a string
 
+---
+# 🏷️For Loop  
+### Looping Over Sequences (Arrays)
+- Looping through array elements using index-based loops  
+- Accessing each value during iteration  
 
-========================================
-📌 Loops
-========================================
-• For Loop  
-• Looping Through Arrays  
-• Nested Loops  
-• break / continue / labels  
-• Advanced For Loop  
-• Practical Loop Example  
-• While Loop  
-• Do/While Loop  
+### Nested Loops
+- Loop inside another loop  
+- Useful for working with multi-dimensional arrays or combinations  
+
+### Loop Control (break, continue, labels)
+- `break` → stops the loop entirely  
+- `continue` → skips the current iteration  
+- Labels → controlling nested loops by naming them  
+
+### Advanced For Loop (No Conditions)
+- Using `for(;;)` as an infinite loop  
+- Manual breaking from inside the loop  
+
+### Practical Loop Example (Products + Colors)
+- Looping over product list  
+- Nested loop to show available colors for each product  
+- Demonstrating real usage of loops together  
+
+### While Loop
+- Loop that continues as long as a condition is true  
+- Good for unknown iteration counts  
+
+### Do / While Loop
+- Executes at least once before checking the condition  
+- Useful when you need the loop to run once regardless of the condition
 
 
 ========================================
