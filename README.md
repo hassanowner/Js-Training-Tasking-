@@ -75,7 +75,7 @@ The purpose of this repository is purely **educational**:
 
 ---
 
-### 6-7. General Practice File
+### 6-7. Function Basic 
 - **Function Intro and Basic Usage** – Declaring and calling functions.  
 - **Function Advanced Examples** – More complex examples and practice.  
 - **Function Return and Use Cases** – Returning values from functions.  
@@ -92,8 +92,12 @@ The purpose of this repository is purely **educational**:
 
 ---
 
-### 8–13. Functions
-
+### 8–13. Functions Tasking
+- Normalize Names
+- Clean User Data
+- Classify Element
+- Random Argument Handler
+- Analyze Array Data
 
 ---
 ### 14-18. Functional Methods Mix
