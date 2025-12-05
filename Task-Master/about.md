@@ -34,27 +34,24 @@
 
 • Conditional (Ternary) Operator  
   - condition ? valueIfTrue : valueIfFalse  
-  - Supports nested usage  
 
 • Logical OR || vs Nullish Coalescing ??  
-  - || → returns first truthy value  
-  - ?? → returns first defined value (not null/undefined)  
+  - || → first truthy  
+  - ?? → first defined (not null/undefined)  
 
 • Switch Statement  
-  - switch(expression), case, default  
-  - Strict comparison (===)  
-  - Multiple cases can share the same block  
+  - case, default  
+  - strict comparison (===)  
 
 
 ========================================
-📌 If / Else Control Flow  (separate section)
+📌 If / Else Control Flow
 ========================================
-• if Statement  
+• if  
 • else if  
 • else  
 • Nested if  
-• Condition-based branching  
-• Practical decision-making examples  
+• Conditional branching  
 
 
 ========================================
@@ -72,36 +69,36 @@
 ========================================
 • Creating Arrays  
 • new Array() vs []  
-• Accessing Array Elements  
+• Accessing Elements  
 • Nested Arrays  
-• Updating Array Elements  
-• Checking with Array.isArray  
+• Updating Elements  
+• Array.isArray  
 
 • Array Length  
-• Modifying length (truncate)  
+• Modifying length  
 
-• Adding / Removing Elements  
-  - unshift()  
-  - push()  
-  - shift()  
-  - pop()  
+• Adding & Removing Elements  
+  - unshift  
+  - push  
+  - shift  
+  - pop  
 
 • Searching  
-  - indexOf()  
-  - lastIndexOf()  
-  - includes()  
+  - indexOf  
+  - lastIndexOf  
+  - includes  
 
 • Sorting  
-  - sort()  
-  - reverse()  
+  - sort  
+  - reverse  
 
 • Slicing & Splicing  
-  - slice()  
-  - splice()  
+  - slice  
+  - splice  
 
 • Joining Arrays  
-  - concat()  
-  - join()  
+  - concat  
+  - join  
 
 
 ========================================
@@ -110,25 +107,25 @@
 • For Loop  
 • Looping Through Arrays  
 • Nested Loops  
-• Loop Control (break, continue, labels)  
-• Advanced For Loop (no conditions)  
-• Practical Loop Examples (products + colors)  
+• break / continue / labels  
+• Advanced For Loop  
+• Practical Loop Example  
 • While Loop  
-• Do / While Loop  
+• Do/While Loop  
 
 
 ========================================
 📌 Functions (Basics)
 ========================================
 • What Is a Function?  
-• User-Defined vs Built-In Functions  
+• User-Defined vs Built-In  
 • Function Syntax  
-• Real-Life Function Examples  
+• Real-Life Examples  
 • Parameters & Arguments  
 • Practical Examples  
 • Advanced Examples  
 • return Keyword  
-• Automatic Semicolon Insertion (ASI)  
+• ASI  
 • Interrupting Execution  
 • Default Parameters (Old + ES6)  
 • Rest Parameters (...args)  
@@ -138,13 +135,23 @@
 📌 Functions (Advanced)
 ========================================
 • Conditions Inside Functions  
-• Loops & Array Operations Inside Functions  
+• Loops Inside Functions  
 • Anonymous Functions  
-• Callbacks (Passing Functions as Arguments)  
+• Callbacks  
 • setTimeout + Callback  
 • Nested Functions  
 • Returning Functions  
 • Arrow Functions  
-• Scope (Global / Local)  
-• Block Scope (if / for)  
-• Lexical Scope
+• Global / Local Scope  
+• Block Scope  
+• Lexical Scope  
+
+
+========================================
+📌 Function Practice Files
+========================================
+• 14_Function-mapPractice.js  
+• 15_Function-FilterPractice.js  
+• 16_Function-ReducePractice.js  
+• 17_FunctionforEachandPractice.js  
+• 18_Function-map-filter-reduce-forEach.js
