@@ -78,7 +78,7 @@
 
 ---
 
-## 🏷️If Condition/ Else Control Flow
+# 🏷️If Condition/ Else Control Flow
 
 ### Comparison Operators
 - == Equal (checks value only)
