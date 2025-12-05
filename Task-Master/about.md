@@ -112,16 +112,6 @@
 - Comparison uses === (strict equality)
 
 ---
-## 🏷️Strings
-
-• Basic String Methods  
-• slice()  
-• repeat()  
-• split()  
-• Advanced String Methods  
-
----
-
 ========================================
 📌 Arrays
 ========================================
