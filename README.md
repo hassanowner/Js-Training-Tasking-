@@ -75,13 +75,7 @@ The purpose of this repository is purely **educational**:
 
 ---
 
-### 6. General Practice File
-- A **shared file** covering most of the previous topics as combined exercises.  
-- Useful for **reviewing and practicing multiple concepts together**.
-
----
-
-### 7–13. Functions
+### 6-7. General Practice File
 - **Function Intro and Basic Usage** – Declaring and calling functions.  
 - **Function Advanced Examples** – More complex examples and practice.  
 - **Function Return and Use Cases** – Returning values from functions.  
@@ -95,6 +89,11 @@ The purpose of this repository is purely **educational**:
 - **Scope: Global and Local** – Understanding variable scope.  
 - **Scope: Block** – Block-level scope with `let` and `const`.  
 - **Scope: Lexical** – Lexical scope and closures.
+
+---
+
+### 8–13. Functions
+
 
 ---
 ### 14-18. Functional Methods Mix
