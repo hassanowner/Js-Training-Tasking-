@@ -1,5 +1,5 @@
 ![banner-review](banner-main.png)
-[View](about.md)
+
 # JavaScript Test Tasks – Comprehensive Educational Review
 
 ## Overview 🕸️🕷️
@@ -190,7 +190,9 @@ The purpose of this repository is purely **educational**:
 1. Open each JavaScript file in your preferred editor.  
 2. Read the comments and instructions for each task.  
 3. Run the code in **browser console** or **Node.js** to see outputs.  
-4. Modify and experiment with the code to understand the concepts better.  
+4. Modify and experiment with the code to understand the concepts better.
+5. You can access and review the organized list of all previously covered topics through the link provided here.
+6. \-\-\> [about.md file](about.md)
 
 ## Purpose 📚
 This repository is a **learning and revision toolkit**. It is designed for:  
