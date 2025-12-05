@@ -345,3 +345,80 @@
 - Cloning objects  
 - Merging multiple objects  
 - Adding or overriding properties during assignment
+
+---
+# 🏷️DOM Basics
+### DOM Selectors
+- getElementById, getElementsByTagName, getElementsByClassName  
+- querySelector, querySelectorAll  
+- Selecting specific elements from returned collections  
+
+### Get / Set Content & Attributes
+- innerHTML vs textContent  
+- Direct attribute modification  
+- getAttribute / setAttribute  
+
+### Check Attributes
+- hasAttribute  
+- removeAttribute  
+- hasAttributes  
+
+### Create Elements (Basic)
+- createElement  
+- Adding attributes and comments  
+- Appending text and children  
+
+### Create Product (Heading + Paragraph)
+- Building a product box dynamically  
+- Adding `<h3>` and `<p>` inside `<div>`  
+
+### Deal With Children
+- children vs childNodes  
+- firstChild / lastChild  
+- firstElementChild / lastElementChild  
+
+### DOM Events
+- HTML events vs JS events  
+- onclick, oncontextmenu, mouseenter, mouseleave  
+- Window events: load, scroll, resize  
+- Input events: focus, blur, submit  
+
+### Form Validation & Prevent Default
+- Validating input before submission  
+- Preventing form submit if invalid  
+- Blocking default link behavior  
+
+### Event Simulation
+- Triggering click  
+- Triggering focus / blur programmatically  
+
+### DOM ClassList
+- classList.length  
+- contains(), item()  
+- add(), remove(), toggle()  
+
+### DOM CSS Manipulation
+- Changing styles using `.style`  
+- Using cssText  
+- removeProperty / setProperty  
+
+### Deal With Elements
+- append, prepend  
+- before, after  
+- remove()  
+
+### DOM Traversing
+- parentElement  
+- nextSibling / previousSibling  
+- Navigating children  
+
+### DOM Cloning
+- cloneNode(true/false)  
+- Deep cloning elements  
+
+### Add Event Listener + Cloned Element Handling
+- addEventListener  
+- Handling multiple event types  
+- Detecting and interacting with cloned elements
+---
+
